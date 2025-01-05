@@ -3,7 +3,7 @@
 }
 
 html {
-  --avatar-size: 230px;
+  --avatar-size: 240px;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Sans-serif;
+  font-family: Helvetica, Verdana, Sans-serif;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 5px gray;
-  margin-top: 70px;
+  margin-top: 80px;
   font-size: small;
   font-weight: lighter;
 }
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em 1em 1em;
+  padding: 2.5em 1em 1em;
 }
 
 .content-wrapper > div {
@@ -43,19 +43,20 @@ body {
 .content-wrapper p {
   font-weight: 600;
   width: 80%;
+  line-height: 20px;
 }
 
 .content-wrapper h2 {
   font-size: xx-large;
   font-weight: lighter;
-  padding: 0 0 0.5em;
+  padding: 0 0 0.6em;
 }
 
 .user-card img {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
-  margin: 0.5em 1em 1em;
+  margin: 0.7em 0 1.6em;
   padding: 10px;
   box-shadow: 0 1px 1px 1px #dcdcdb;
   object-fit: cover;
@@ -77,13 +78,30 @@ button {
   background-color: #1f354c;
   color: #c1a2aa;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2em 1.5em 2em;
+}
+
+.statistics > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 2em 1.5em 2em;
+}
+
+.statistics > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics i {
+  font-size: 28px;
+  padding-right: 8px;
 }
 
 .statistics div > p + p {
   color: white;
+  padding-top: 2px;
 }
 
 .statistics div:nth-of-type(2) {
