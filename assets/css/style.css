@@ -10,15 +10,18 @@ body {
   background-color: #2bc1ac;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: Sans-serif;
+  text-align: center;
 }
 
 .user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   background-color: white;
   width: 440px;
-  align-self: center;
   border-radius: 10px;
-  text-align: center;
   overflow: hidden;
   box-shadow: 0 0 5px gray;
   margin-top: 70px;
@@ -27,6 +30,9 @@ body {
 }
 
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2em 1em 1em;
 }
 
@@ -36,6 +42,7 @@ body {
 
 .content-wrapper p {
   font-weight: 600;
+  width: 80%;
 }
 
 .content-wrapper h2 {
@@ -54,6 +61,18 @@ body {
   object-fit: cover;
 }
 
+button {
+  background-color: #65b4ff;
+  color: white;
+  border-color: #7cacd1;
+  border-radius: 6px;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 2em;
+}
+
 .statistics {
   background-color: #1f354c;
   color: #c1a2aa;
@@ -69,16 +88,4 @@ body {
 
 .statistics div:nth-of-type(2) {
   border: 10px red;
-}
-
-button {
-  background-color: #65b4ff;
-  color: white;
-  border-color: #7cacd1;
-  border-radius: 6px;
-  width: 150px;
-  height: 50px;
-  font-weight: bold;
-  font-size: large;
-  margin-top: 2em;
 }
