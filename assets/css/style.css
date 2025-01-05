@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --avatar-size: 230px;
+}
+
+body {
+  background-color: #2bc1ac;
+  display: flex;
+  flex-direction: column;
+  font-family: Sans-serif;
+}
+
+.user-card {
+  background-color: white;
+  width: 440px;
+  align-self: center;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 5px gray;
+  margin-top: 70px;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.content-wrapper {
+  padding: 2em 1em 1em;
+}
+
+.content-wrapper > div {
+  color: gray;
+}
+
+.content-wrapper p {
+  font-weight: 600;
+}
+
+.content-wrapper h2 {
+  font-size: xx-large;
+  font-weight: lighter;
+  padding: 0 0 0.5em;
+}
+
+.user-card img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin: 0.5em 1em 1em;
+  padding: 10px;
+  box-shadow: 0 1px 1px 1px #dcdcdb;
+  object-fit: cover;
+}
+
+.statistics {
+  background-color: #1f354c;
+  color: #c1a2aa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.5em 2em;
+}
+
+.statistics div > p + p {
+  color: white;
+}
+
+.statistics div:nth-of-type(2) {
+  border: 10px red;
+}
+
+button {
+  background-color: #65b4ff;
+  color: white;
+  border-color: #7cacd1;
+  border-radius: 6px;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 2em;
+}
