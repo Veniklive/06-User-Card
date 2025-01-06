@@ -86,7 +86,8 @@ button {
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin: 2em 1.5em 2em;
+  gap: 1px;
+  padding: 2em 1.5em 2em;
 }
 
 .statistics > div > div {
@@ -104,6 +105,16 @@ button {
   padding-top: 2px;
 }
 
-.statistics div:nth-of-type(2) {
-  border: 10px red;
+.statistics > div:nth-child(1) {
+  justify-content: flex-start;
+}
+
+.statistics > div:nth-child(2) {
+  border: 2px solid #284157;
+  border-top: none;
+  border-bottom: none;
+}
+
+.statistics > div:nth-child(3) {
+  justify-content: flex-end;
 }
